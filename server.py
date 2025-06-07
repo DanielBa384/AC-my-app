@@ -34,14 +34,14 @@ class SimpleAuthHandler(BaseHTTPRequestHandler):
 
         if self.path == "/login":
             if self.check_login(username, password):
-                self.respond_html(f"<h2>Bun venit, {username}!</h2><p>Autentificare reușită.</p>")
+                self.respond_html(f"<h2>Bun venit, {username}!</h2><p>Autentificare reusita.</p>")
             else:
-                self.respond_html("<h2>Autentificare eșuată</h2><p>Utilizator sau parolă greșite.</p>")
+                self.respond_html("<h2>Autentificare esuata</h2><p>Utilizator sau parola gresite.</p>")
         elif self.path == "/register":
             if self.register_user(username, password):
-                self.respond_html("<h2>Înregistrare reușită!</h2><a href='/login'>Loghează-te</a>")
+                self.respond_html("<h2>Inregistrare reusita!</h2><a href='/login'>Logheaza-te</a>")
             else:
-                self.respond_html("<h2>Utilizatorul există deja!</h2><a href='/register'>Încearcă alt nume</a>")
+                self.respond_html("<h2>Utilizatorul exista deja!</h2><a href='/register'>Incearca alt nume</a>")
 
     def connect_db(self):
         return mysql.connector.connect(**db_config)
