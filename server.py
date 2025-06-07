@@ -97,7 +97,7 @@ class SimpleAuthHandler(BaseHTTPRequestHandler):
 
     def show_register(self):
         html = """
-        <h2>Inregistrare</h2>
+        <h2>Innvbtgrn6uj7uregistrare</h2>
         <form method="post" action="/register">
             Utilizator: <input type="text" name="username"><br>
             Parola: <input type="password" name="password"><br>
