@@ -78,7 +78,7 @@ class SimpleAuthHandler(BaseHTTPRequestHandler):
         html = """
         <h1>Bine ai venit!</h1>
         <ul>
-            <li><a href="/register">Înregistrare</a></li>
+            <li><a href="/register">Inregistrare</a></li>
             <li><a href="/login">Logare</a></li>
         </ul>
         """
@@ -97,11 +97,11 @@ class SimpleAuthHandler(BaseHTTPRequestHandler):
 
     def show_register(self):
         html = """
-        <h2>Înregistrare</h2>
+        <h2>Inregistrare</h2>
         <form method="post" action="/register">
             Utilizator: <input type="text" name="username"><br>
-            Parolă: <input type="password" name="password"><br>
-            <input type="submit" value="Înregistrează-te">
+            Parola: <input type="password" name="password"><br>
+            <input type="submit" value="Inregistrează-te">
         </form>
         """
         self.respond_html(html)
